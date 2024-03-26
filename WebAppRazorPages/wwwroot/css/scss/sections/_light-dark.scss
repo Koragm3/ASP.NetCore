@@ -1,0 +1,72 @@
+﻿#light-dark-mode {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 988px;
+    display: flex;
+    z-index: 0;
+    position: relative;
+
+    .box-dark {
+        left: 0px;
+        height: 988px;
+        width: 50%;
+        position: absolute;
+        z-index: -1;
+        background-color: #0b0f19;
+    }
+
+    .vl {
+        border-left: 6px solid green;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        margin-left: -3px;
+        top: 0;
+        border-color: #6366f1;
+    }
+
+    .circle {
+        width: 7em;
+        position: absolute;
+        margin-left: 379px;
+        margin-top: 250px;
+    }
+
+    .dl-font {
+        display:flex;
+        justify-content:center;
+        text-align:center;
+        padding-bottom: 20px;
+        
+
+        .dark {
+            color: #0b0f19;
+            
+        }
+
+        .light {
+            color: #ffffff;
+            
+            
+        }
+    }
+
+    .container {
+        justify-content: center;
+        
+    }
+
+    .darkimg {
+        width: 871.61px;
+        z-index: 0;
+    }
+
+    img {
+        margin-top: -20px;
+        max-width: 100%;
+    }
+
+
+    
+}

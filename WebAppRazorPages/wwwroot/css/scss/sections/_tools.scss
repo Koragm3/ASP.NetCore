@@ -1,0 +1,59 @@
+﻿#tools {
+    background-color: #f3f6ff;
+    padding: 100px 0px 160px;
+    text-align: center;
+
+    .bold-text {
+        padding-bottom: 60px;
+
+        p {
+            opacity: 70%;
+        }
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        //f s d made for the ruled grid as an inner borders
+        .f {
+            border-right: 2px solid #e2e5f1;
+        }
+
+        .s {
+            border-bottom: 2px solid #e2e5f1;
+        }
+
+        .d {
+            border-left: 2px solid #e2e5f1;
+        }
+
+        .box {
+            display: block;
+            align-content: center;
+            height: 268px;
+            padding: 20px;
+
+
+            h5 {
+                color: #0b0f19;
+            }
+
+            p {
+                opacity: 90%;
+                color: #565973;
+            }
+
+            img {
+                margin-bottom: 40px;
+            }
+
+            &:hover {
+                background-color: #ffffff;
+                transform: scale(1.009);
+                transition: transform .5s;
+                box-shadow: 0px 0px 5px;
+            }
+        }
+    }
+}

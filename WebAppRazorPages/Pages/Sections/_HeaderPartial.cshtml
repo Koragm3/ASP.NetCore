@@ -1,0 +1,29 @@
+﻿@using WebAppRazorPages.Pages.Components
+ <header>
+     <div class="container">
+         <a id="logo" href="home.html"><img src="images/logo-light.svg" alt=""></a>
+
+         <div id="menu">
+             <nav>
+                <a class="menu-link" href="#overview">Overview</a>
+                <a class="menu-link" href="#features">Features</a>
+                <a class="menu-link" href="contact.html">Contact</a>
+             </nav>
+         </div>
+         <div class="btn-switch">
+             <label>Light</label>
+             <label class="switch" for="switch-mode">
+                 <input type="checkbox" id="switch-mode"/>
+                 <span class="slider round"></span>
+             </label>
+             <label>Dark</label>
+         </div>
+         <div class="account-buttons">
+            <Partial name="~/Pages/Components/_Button.cshtml" model='new ButtonViewModel { ClassName = "btn-gray", Link = "#", Icon = "fa-regular fa-right-to-bracket", Text = "Sign In"}' />
+            <Partial name="~/Pages/Components/_Button.cshtml" model='new ButtonViewModel { ClassName = "btn-theme", Link = "#", Icon = "fa-regular fa-user", Text = "Sign Up"}' />
+
+        </div>
+
+     </div>
+
+ </header>

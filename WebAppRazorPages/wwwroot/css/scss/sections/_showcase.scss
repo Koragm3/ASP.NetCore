@@ -1,0 +1,51 @@
+﻿#showcase {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "task img";
+    align-items: center;
+    padding-bottom:60px;
+    .background-image {
+        top: 50px;
+        max-width:100%;
+        max-height:50%;
+        right: 0px;
+        
+
+        @media(min-width: 768px) {
+            position: absolute;
+        }
+    }
+
+    .container {
+        grid-area: task;
+        gap: 404px;
+        position: relative;
+        margin-top: 50px;
+
+        .content {
+            display: block;
+            align-items: start;
+
+            .btn-theme-s {
+                width: 50%;
+            }
+            p{
+                padding-top:20px;
+                padding-bottom:20px;
+            }
+            h6 {
+                padding-top: 100px;
+            }
+
+            .brands {
+                padding-top: 20px;
+                display: flex;
+                gap: 15px;
+            }
+        }
+    }
+
+    @media(max-width: 768px) {
+        display: block;
+    }
+}

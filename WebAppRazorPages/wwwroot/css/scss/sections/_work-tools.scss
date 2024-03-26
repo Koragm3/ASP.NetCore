@@ -1,0 +1,34 @@
+﻿#work-tools {
+    height: 812px;
+    padding-top: 100px;
+
+
+    .bold-text {
+        padding-bottom: 40px;
+        text-align: center;
+
+
+        p {
+            opacity: 70%;
+            color: #565973;
+        }
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 40px;
+
+        .boxes {
+
+
+            p {
+                text-align: left;
+            }
+
+            img {
+                padding-bottom: 20px;
+            }
+        }
+    }
+}

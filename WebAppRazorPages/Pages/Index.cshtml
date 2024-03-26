@@ -1,0 +1,139 @@
+﻿@page
+@model WebAppRazorPages.Pages.IndexModel
+@{
+    ViewData["Title"] = "Overview";
+}
+
+
+<div class="container">
+    <section id="showcase">
+        <img class="background-image" src="~/images/showcase-taskmaster.svg">
+
+        <div class="container">
+            <div class="content">
+                <h1>Task Managment Assistant You<br /> Gonna Love</h1>
+                <p>We offer you a new genration of task managment system. Plan, manage &Aacute; track all your tasks in one flexible tool</p>
+                <a class="btn-theme-s" href="#">Get started for free</a>
+                <h6>Largest companies use our tool to work efficiently</h6>
+                <div class="brands">
+                    @if (Model.Brands != null)
+                    {
+                        @foreach (var brand in Model.Brands)
+                        {
+                            <img src="@brand" alt="">
+                        }
+                    }
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</div>
+
+<section id="tools">
+    <div class="bold-text">
+        <h1>What Do You Get with Our Tool?</h1>
+        <p>Make sure all your tasks are organized so you can set the priorities and focus<br /> on important.</p>
+    </div>
+    
+    <div class="container">
+        
+        <div class="box f s">
+            <img src="~/images/tools/chat.svg" />
+            <h5>Comments on Tasks</h5>
+            <p>Id mollis consectetur congue egestas egestas<br /> suspendisse blandit justo.</p>
+        </div>
+        <div class="box s">
+            <img src="~/images/tools/presentation.svg" />
+            <h5>Tasks Analytics</h5>
+            <p>Non imperdiet facilisis nulla tellus Morbi scelerisque eget adipiscing vulputate.</p>
+        </div>
+        <div class="box d s">
+            <img src="~/images/tools/add-group.svg" />
+            <h5>Multiple Assignees</h5>
+            <p>A elementum, imperdiet enim, pretium etiam facilisi in aenean quam mauris.</p>
+        </div>
+        <div class="box f">
+            <img src="~/images/tools/bell.svg" />
+            <h5>Notifications</h5>
+            <p>Diam, suspendisse velit cras ac. Lobortis diam volutpat, eget pellentesque viverra.</p>
+        </div>
+        <div class="box">
+            <img src="~/images/tools/test.svg" />
+            <h5>Sections & Subtasks</h5>
+            <p>Mi feugiat hac id in. Sit elit placerat lacus nibh lorem ridiculus lectus.</p>
+        </div>
+        <div class="box d">
+            <img src="~/images/tools/shield.svg" />
+            <h5>Data Security</h5>
+            <p>Aliquam malesuada neque eget elit nulla vestibulum nunc cras.</p>
+        </div>
+        
+    </div>
+</section>
+
+<section id="light-dark-mode">
+    <div class="box-dark"></div>
+    <div class="container">
+        <div class="dl-font">
+            <h1 class="light">Switch between</h1>
+            <h1 class="dark">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Light & Dark Mode</h1>
+        </div>
+        <div class="vl">
+            
+        </div>
+         <img class="circle"  src="~/images/tools/Frame 2110.svg"/>
+        <img class="darkimg" src="~/images/tools/Screendark.svg" />
+        
+        <img  src="~/images/tools/Bottom Casing (Silver).svg" />
+    </div>
+    
+    <div class="box-light">
+        
+    </div>
+</section>
+
+<section id="work-tools">
+    <div class="bold-text">
+        <h1>Integrate Top Work Tools</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat mollis egestas. Nam luctus<br/> facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.</p>
+    </div>
+    
+    <div class ="container">
+        <div class="boxes">
+            <img src="~/images/work-tools/google.svg" />
+            <p>Lorem magnis pretium sed<br /> curabitur nunc facilisi nunc cursus<br /> sagittis.</p>
+        </div>
+        <div class="boxes">
+            <img src="~/images/work-tools/webcam.svg" />
+            <p>In eget a mauris quis. Tortor dui<br /> tempus quis integer est sit<br /> natoque placerat dolor.</p>
+        </div>
+        <div class="boxes">
+            <img src="~/images/work-tools/color.svg" />
+            <p>Id mollis consectetur congue<br /> egestas egestas suspendisse <br /> blandit justo.</p>
+        </div>
+        <div class="boxes">
+            <img src="~/images/work-tools/gmail.svg" />
+            <p>Rutrum interdum tortor, sed at<br /> nulla. A cursus bibendum elit purus<br /> cras praesent.</p>
+        </div>
+        <div class="boxes">
+            <img src="~/images/work-tools/blue.svg" />
+            <p>Congue pellentesque amet, viverra <br />curabitur quam diam scelerisque<br /> fermentum urna.</p>
+        </div>
+        <div class="boxes">
+            <img src="~/images/work-tools/monkey.svg" />
+            <p>A elementum, imperdiet enim,<br /> pretium etiam facilisi in aenean<br /> quam mauris.</p>
+        </div>
+        <div class="boxes">
+            <img src="~/images/work-tools/box.svg" />
+            <p>Ut in turpis consequat odio diam<br /> lectus elementum. Est faucibus <br />blandit platea.</p>
+        </div>
+        <div class="boxes">
+            <img src="~/images/work-tools/elephant.svg" />
+            <p>Faucibus cursus maecenas lorem <br />cursus nibh. Sociis sit risus id. Sit<br /> facilisis dolor arcu.</p>
+        </div>
+    </div>
+</section>
+
+
